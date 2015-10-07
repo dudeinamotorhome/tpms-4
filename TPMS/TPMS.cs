@@ -45,10 +45,27 @@ namespace TPMS
         {
             if (filename.Text.Equals(placeHolderText) != true)
             {
-                String sName = filename.Text.IndexOf(".pdf") > -1 ? filename.Text : filename.Text + ".pdf";
+                string sName = filename.Text.IndexOf(".pdf") > -1 ? filename.Text : filename.Text + ".pdf";
                 System.Console.WriteLine(sName);
-                String sourceFile = @Properties.Settings.Default.pdfFile;
-                String destFile = System.IO.Path.Combine(Properties.Settings.Default.targetDir, sName);
+                string sPDF = this.comboBox1.SelectedItem.ToString();
+                System.Console.WriteLine(sPDF);
+                string[] pdfForms = Properties.Settings.Default.pdfFile.Split('|');
+                string targetDir = "";
+                string pdffile = "";
+                foreach ( string item in pdfForms)
+                {
+                    string [] ele = item.Split('~');
+                    if (ele[0] == sPDF)
+                    {
+                        pdffile = ele[1];
+                        targetDir = ele[2];
+                        break;
+                    }
+                }
+
+
+                String sourceFile = pdffile;
+                String destFile = System.IO.Path.Combine(targetDir, sName);
                 int iNbr = 0;
                 while (System.IO.File.Exists(destFile))
                 {
