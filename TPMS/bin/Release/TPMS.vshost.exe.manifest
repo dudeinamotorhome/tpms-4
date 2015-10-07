@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TPMS.exe" size="296864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TPMS.exe" size="297376">
       <assemblyIdentity name="TPMS" version="1.0.0.0" publicKeyToken="781DEDC264073FB2" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Fgwq43h9qJMEoQBki1Q9CNBf3ENX8tNa8IQVXh5vEe0=</dsig:DigestValue>
+        <dsig:DigestValue>DSF/i6gQDM2Q0ZQ0o3zCdj/1vrmhA4WqtRAGqTFDDl4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
