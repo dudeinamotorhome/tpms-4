@@ -15,22 +15,39 @@ namespace TPMS
         public Settings()
         {
             InitializeComponent();
+            string z = Properties.Settings.Default.pdfFile;
+            string[] p = z.Split('|');
+            for(int i = 0; i < p.Length; i++)
+            {
+                string[] item = p[i].Split('~');
+                if (item.Length < 3) break;
+
+                int n = pdfs.Rows.Add();
+                pdfs.Rows[n].Cells[0].Value =item[0];
+                pdfs.Rows[n].Cells[1].Value = item[1];
+                pdfs.Rows[n].Cells[2].Value = item[2];
+            }
         }
+
+        private List<string> PDFForms = new List<string>();
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.pdfFile = pdfFile.Text;
-            Properties.Settings.Default.targetDir = targetDir.Text;
-            Properties.Settings.Default.Save();
-            
-            this.Close();
+            if (name.Text.Length > 0 && pdfFile.Text.Length > 0 && targetDir.Text.Length > 0 )
+            {
+                int n = pdfs.Rows.Add();
+                pdfs.Rows[n].Cells[0].Value = name.Text;
+                pdfs.Rows[n].Cells[1].Value = pdfFile.Text;
+                pdfs.Rows[n].Cells[2].Value = targetDir.Text;
+            } else
+            {
+                MessageBox.Show("Missing Data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
         }
 
-        private void Settings_Shown(object sender, EventArgs e)
-        {
-            pdfFile.Text = Properties.Settings.Default.pdfFile;
-            targetDir.Text = Properties.Settings.Default.targetDir;
-        }
 
         private void pdfFile_Click(object sender, EventArgs e)
         {
@@ -70,6 +87,27 @@ namespace TPMS
 
                 targetDir.Text = fbd.SelectedPath;
             }
+        }
+
+        private void Settings_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Console.Write("closting form");
+
+            string z = "";
+            foreach (DataGridViewRow r in pdfs.Rows)
+            {
+                z += r.Cells[0].Value + "~" + r.Cells[1].Value + "~" + r.Cells[2].Value + "|";
+          
+            }
+
+
+            Properties.Settings.Default.pdfFile = z;
+            Properties.Settings.Default.Save();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

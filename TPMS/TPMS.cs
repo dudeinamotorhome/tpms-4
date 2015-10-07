@@ -16,6 +16,24 @@ namespace TPMS
         public TPMS()
         {
             InitializeComponent();
+            string z = Properties.Settings.Default.pdfFile;
+            string[] items = z.Split('|');
+            bool bselected = false;
+            for (int i = 0; i < items.Length; i++)
+            {
+                string [] item = items[i].Split('~');
+                if (item.Length == 3 && item[0].Length > 0  )
+                {
+                    int cbi = this.comboBox1.Items.Add(item[0]);
+                    if (!bselected)
+                    {
+                        bselected = true;
+                        this.comboBox1.SelectedIndex = cbi;
+
+                    }
+                }
+
+            }
         }
 
         private void cancel_Click(object sender, EventArgs e)
@@ -103,6 +121,11 @@ namespace TPMS
         private void filename_ControlAdded(object sender, ControlEventArgs e)
         {
             filename.Text = placeHolderText;
+        }
+
+        private void TPMS_Activated(object sender, EventArgs e)
+        {
+
         }
     }
 }
