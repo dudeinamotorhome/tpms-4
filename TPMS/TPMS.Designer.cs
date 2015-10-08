@@ -38,11 +38,13 @@
             // 
             // contin
             // 
+            this.contin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.contin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.contin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.contin.Location = new System.Drawing.Point(638, 116);
+            this.contin.Location = new System.Drawing.Point(547, 445);
+            this.contin.Margin = new System.Windows.Forms.Padding(2);
             this.contin.Name = "contin";
-            this.contin.Size = new System.Drawing.Size(133, 50);
+            this.contin.Size = new System.Drawing.Size(193, 32);
             this.contin.TabIndex = 0;
             this.contin.Text = "Continue";
             this.contin.UseVisualStyleBackColor = false;
@@ -50,10 +52,12 @@
             // 
             // cancel
             // 
+            this.cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cancel.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.cancel.Location = new System.Drawing.Point(485, 116);
+            this.cancel.Location = new System.Drawing.Point(11, 445);
+            this.cancel.Margin = new System.Windows.Forms.Padding(2);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(133, 50);
+            this.cancel.Size = new System.Drawing.Size(192, 32);
             this.cancel.TabIndex = 1;
             this.cancel.Text = "Cancel";
             this.cancel.UseVisualStyleBackColor = false;
@@ -61,11 +65,14 @@
             // 
             // filename
             // 
+            this.filename.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.filename.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filename.ForeColor = System.Drawing.Color.Gray;
-            this.filename.Location = new System.Drawing.Point(485, 68);
+            this.filename.Location = new System.Drawing.Point(11, 409);
+            this.filename.Margin = new System.Windows.Forms.Padding(2);
             this.filename.Name = "filename";
-            this.filename.Size = new System.Drawing.Size(285, 39);
+            this.filename.Size = new System.Drawing.Size(729, 29);
             this.filename.TabIndex = 3;
             this.filename.Text = "Type a Name Here ...";
             this.filename.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.filename_ControlAdded);
@@ -74,34 +81,43 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::TPMS.Properties.Resources.turningpoints_header4_475x200;
             this.pictureBox1.InitialImage = global::TPMS.Properties.Resources.turningpoints_header4_475x200;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(461, 183);
+            this.pictureBox1.Size = new System.Drawing.Size(721, 323);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(485, 17);
+            this.comboBox1.Location = new System.Drawing.Point(11, 366);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(285, 40);
+            this.comboBox1.Size = new System.Drawing.Size(729, 32);
             this.comboBox1.TabIndex = 5;
             // 
             // TPMS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 182);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(746, 485);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.contin);
             this.Controls.Add(this.filename);
             this.Controls.Add(this.cancel);
-            this.Controls.Add(this.contin);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TPMS";
             this.Text = "TPMS";
             this.Activated += new System.EventHandler(this.TPMS_Activated);

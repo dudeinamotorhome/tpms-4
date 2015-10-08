@@ -12,6 +12,8 @@ namespace TPMS
 {
     public partial class Settings : Form
     {
+        public event EventHandler onClose;
+
         public Settings()
         {
             InitializeComponent();
@@ -20,12 +22,13 @@ namespace TPMS
             for(int i = 0; i < p.Length; i++)
             {
                 string[] item = p[i].Split('~');
-                if (item.Length < 3) break;
-
-                int n = pdfs.Rows.Add();
-                pdfs.Rows[n].Cells[0].Value =item[0];
-                pdfs.Rows[n].Cells[1].Value = item[1];
-                pdfs.Rows[n].Cells[2].Value = item[2];
+                if (item.Length == 3 && item[0].Length > 0)
+                {
+                    int n = pdfs.Rows.Add();
+                    pdfs.Rows[n].Cells[0].Value = item[0];
+                    pdfs.Rows[n].Cells[1].Value = item[1];
+                    pdfs.Rows[n].Cells[2].Value = item[2];
+                }
             }
         }
 
@@ -43,12 +46,8 @@ namespace TPMS
             {
                 MessageBox.Show("Missing Data", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
-
-
+        
         private void pdfFile_Click(object sender, EventArgs e)
         {
             // Create an instance of the open file dialog box.
@@ -96,18 +95,29 @@ namespace TPMS
             string z = "";
             foreach (DataGridViewRow r in pdfs.Rows)
             {
-                z += r.Cells[0].Value + "~" + r.Cells[1].Value + "~" + r.Cells[2].Value + "|";
+    
+
+                if (r !=null &&  r.Cells[0].Value.ToString().Length > 0)
+                    z += r.Cells[0].Value + "~" + r.Cells[1].Value + "~" + r.Cells[2].Value + "|";
           
             }
 
 
-            Properties.Settings.Default.pdfFile = z;
+            Properties.Settings.Default.pdfFile = z.Substring(0, z.Length - 1 );
             Properties.Settings.Default.Save();
+
+            if (onClose != null)
+                onClose.Invoke(this, EventArgs.Empty);
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pdfs_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            System.Console.Write(sender);
         }
     }
 }

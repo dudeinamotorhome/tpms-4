@@ -46,6 +46,8 @@
             // 
             // settingsClose
             // 
+            this.settingsClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsClose.Location = new System.Drawing.Point(315, 331);
             this.settingsClose.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.settingsClose.Name = "settingsClose";
@@ -57,19 +59,23 @@
             // 
             // pdfFile
             // 
+            this.pdfFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pdfFile.Location = new System.Drawing.Point(156, 228);
             this.pdfFile.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pdfFile.Name = "pdfFile";
-            this.pdfFile.Size = new System.Drawing.Size(527, 35);
+            this.pdfFile.Size = new System.Drawing.Size(527, 26);
             this.pdfFile.TabIndex = 1;
             this.pdfFile.Click += new System.EventHandler(this.pdfFile_Click);
             // 
             // targetDir
             // 
+            this.targetDir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.targetDir.Location = new System.Drawing.Point(156, 276);
             this.targetDir.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.targetDir.Name = "targetDir";
-            this.targetDir.Size = new System.Drawing.Size(525, 35);
+            this.targetDir.Size = new System.Drawing.Size(525, 26);
             this.targetDir.TabIndex = 2;
             this.targetDir.Click += new System.EventHandler(this.targetDir_Click);
             // 
@@ -80,6 +86,9 @@
             // pdfs
             // 
             this.pdfs.AllowUserToAddRows = false;
+            this.pdfs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pdfs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pdfs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pdf_name,
@@ -91,6 +100,7 @@
             this.pdfs.RowTemplate.Height = 28;
             this.pdfs.Size = new System.Drawing.Size(754, 150);
             this.pdfs.TabIndex = 3;
+            this.pdfs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pdfs_CellContentClick);
             // 
             // pdf_name
             // 
@@ -117,42 +127,50 @@
             // 
             // name
             // 
+            this.name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.name.Location = new System.Drawing.Point(156, 179);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(525, 35);
+            this.name.Size = new System.Drawing.Size(525, 26);
             this.name.TabIndex = 4;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 179);
+            this.label1.Location = new System.Drawing.Point(73, 179);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 29);
+            this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Name:";
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(90, 228);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 29);
+            this.label2.Size = new System.Drawing.Size(38, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "File:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 276);
+            this.label3.Location = new System.Drawing.Point(70, 276);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 29);
+            this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Folder:";
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 395);
             this.Controls.Add(this.label2);
