@@ -119,7 +119,7 @@
             this.Controls.Add(this.cancel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TPMS";
-            this.Text = "TPMS";
+            this.Text = "TPDM - Turning Points Document Management";
             this.Activated += new System.EventHandler(this.TPMS_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
