@@ -1,4 +1,4 @@
-﻿namespace TPMS
+﻿namespace TPDM
 {
     partial class Settings
     {

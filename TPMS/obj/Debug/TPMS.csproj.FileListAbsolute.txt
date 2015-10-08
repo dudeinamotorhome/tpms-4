@@ -11,3 +11,6 @@ C:\Users\s2s\documents\visual studio 2015\Projects\TPMS\TPMS\bin\Debug\TPMS.exe.
 C:\Users\s2s\documents\visual studio 2015\Projects\TPMS\TPMS\bin\Debug\TPMS.application
 C:\Users\s2s\documents\visual studio 2015\Projects\TPMS\TPMS\obj\Debug\TPMS.exe.manifest
 C:\Users\s2s\documents\visual studio 2015\Projects\TPMS\TPMS\obj\Debug\TPMS.application
+C:\Users\s2s\projects\tpms\TPMS\bin\Debug\TPMS.exe.config
+C:\Users\s2s\projects\tpms\TPMS\obj\Debug\TPMS.exe
+C:\Users\s2s\projects\tpms\TPMS\obj\Debug\TPMS.pdb
