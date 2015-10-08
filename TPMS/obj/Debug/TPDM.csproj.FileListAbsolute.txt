@@ -1,0 +1,13 @@
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.csproj.GenerateResource.Cache
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.TPDM.resources
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.Settings.resources
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Debug\TPDM.exe.config
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Debug\TPDM.exe.manifest
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Debug\TPDM.application
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Debug\TPDM.exe
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Debug\TPDM.pdb
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.Properties.Resources.resources
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.exe.manifest
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.application
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.exe
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Debug\TPDM.pdb

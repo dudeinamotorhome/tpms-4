@@ -1,0 +1,13 @@
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.csproj.GenerateResource.Cache
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.TPDM.resources
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.Settings.resources
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Release\TPDM.exe.config
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Release\TPDM.exe.manifest
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Release\TPDM.application
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Release\TPDM.exe
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\bin\Release\TPDM.pdb
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.Properties.Resources.resources
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.exe.manifest
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.application
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.exe
+C:\Users\s2s\Documents\Visual Studio 2015\Projects\TPMS\TPMS\obj\Release\TPDM.pdb

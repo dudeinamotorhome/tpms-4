@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPDM", "TPMS\TPDM.csproj", "{EBE391D6-DD1E-4E5D-805F-9B220D7FAFBB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{54DC12FC-C369-49A9-8E9F-50B06281CFD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE391D6-DD1E-4E5D-805F-9B220D7FAFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE391D6-DD1E-4E5D-805F-9B220D7FAFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE391D6-DD1E-4E5D-805F-9B220D7FAFBB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EBE391D6-DD1E-4E5D-805F-9B220D7FAFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE391D6-DD1E-4E5D-805F-9B220D7FAFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE391D6-DD1E-4E5D-805F-9B220D7FAFBB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{54DC12FC-C369-49A9-8E9F-50B06281CFD0}.Debug|Any CPU.ActiveCfg = Debug
+		{54DC12FC-C369-49A9-8E9F-50B06281CFD0}.Debug|Any CPU.Build.0 = Debug
+		{54DC12FC-C369-49A9-8E9F-50B06281CFD0}.Release|Any CPU.ActiveCfg = Release
+		{54DC12FC-C369-49A9-8E9F-50B06281CFD0}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
